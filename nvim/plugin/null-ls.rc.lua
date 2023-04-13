@@ -22,7 +22,6 @@ null_ls.setup {
     null_ls.builtins.diagnostics.flake8.with({
       prefer_local = ".venv/bin",
     }),
-    null_ls.builtins.diagnostics.fish
   },
   on_attach = function(client, bufnr)
     if client.supports_method("textDocument/formatting") then

@@ -12,14 +12,18 @@ local lsp_formatting = function(bufnr)
   })
 end
 
+-- for conciseness
+local formatting = null_ls.builtins.formatting   -- to setup formatters
+local diagnostics = null_ls.builtins.diagnostics -- to setup linters
+
 null_ls.setup {
   sources = {
-    null_ls.builtins.formatting.prettierd,
-    null_ls.builtins.diagnostics.eslint_d.with({
+    formatting.prettier,
+    diagnostics.eslint_d.with({
       diagnostics_format = '[eslint] #{m}\n(#{c})'
     }),
-    null_ls.builtins.formatting.black,
-    null_ls.builtins.diagnostics.flake8.with({
+    formatting.black,
+    diagnostics.flake8.with({
       prefer_local = ".venv/bin",
     }),
   },

@@ -51,6 +51,9 @@ packer.startup(function(use)
 
   use 'lewis6991/gitsigns.nvim'
 
+  -- file explorer
+  use("nvim-tree/nvim-tree.lua")
+
   -- File manager
   use({
     "nvim-neo-tree/neo-tree.nvim",

@@ -28,3 +28,7 @@
 - inc-rename:
 
   - `<Space>cr` : rename symbol and will auto rename all same symbol in the file
+
+- comment:
+
+  - `gc` : change selected codes into comments or back to codes again

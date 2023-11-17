@@ -5,6 +5,8 @@
 local opt = vim.opt
 
 vim.g.mapleader = " "
+vim.o.pumblend = 0
+vim.o.winblend = 0
 
 vim.scriptencoding = "utf-8"
 opt.encoding = "utf-8"

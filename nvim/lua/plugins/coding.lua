@@ -94,4 +94,12 @@ return {
       table.insert(opts.sources, { name = "emoji" })
     end,
   },
+
+  {
+    "numToStr/Comment.nvim",
+    opts = {
+      -- add any options here
+    },
+    lazy = false,
+  },
 }
